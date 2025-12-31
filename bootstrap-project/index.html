@@ -16,73 +16,81 @@
       <div class="container-fluid">
         <a class="navbar-brand">Travels</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="myTab" role="tablist"> <!-- no necesario usar nav-tap -->
+        <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
 
-            <!-- Carousel -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
-            </li>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="myTab" role="tablist">
 
-            <!-- Cards -->
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="cards-tap" data-bs-toggle="tab" data-bs-target="#cards-tab-pane" type="button"
-                role="tab" aria-controls="cards-tap-pane" aria-selected="false">Cards</button>
-            </li>
+              <!-- Carousel -->
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                  type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+              </li>
 
-            <!-- Destinos -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="europaDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Europa
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="europaDropdown">
-                <li>
-                  <button class="dropdown-item" id="roma-tab" data-bs-toggle="tab" data-bs-target="#roma-tab-pane"
-                    type="button" role="tab" aria-controls="roma-tab-pane" aria-selected="false">
-                    Roma
-                  </button>
-                </li>
-                <li>
-                  <button class="dropdown-item" id="paris-tab" data-bs-toggle="tab" data-bs-target="#paris-tab-pane"
-                    type="button" role="tab" aria-controls="paris-tab-pane" aria-selected="false">
-                    Paris
-                  </button>
-                </li>
-                <li>
-                  <button class="dropdown-item" id="londres-tab" data-bs-toggle="tab" data-bs-target="#londres-tab-pane"
-                    type="button" role="tab" aria-controls="londres-tab-pane" aria-selected="false">
-                    Londres
-                  </button>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="asia-tab" data-bs-toggle="tab" data-bs-target="#asia-tab-pane" type="button"
-                role="tab" aria-controls="asia-tab-pane" aria-selected="false">
-                Asia
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="america-tab" data-bs-toggle="tab" data-bs-target="#america-tab-pane"
-                type="button" role="tab" aria-controls="america-tab-pane" aria-selected="false">
-                América
-              </button>
-            </li>
-            <li>
-              <button class="dark-light">🌙</button>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+              <!-- Cards -->
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="cards-tap" data-bs-toggle="tab" data-bs-target="#cards-tab-pane"
+                  type="button" role="tab" aria-controls="cards-tap-pane" aria-selected="false">Cards</button>
+              </li>
+
+              <!-- Destinos -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="europaDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Europa
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="europaDropdown">
+                  <li>
+                    <button class="dropdown-item" id="roma-tab" data-bs-toggle="tab" data-bs-target="#roma-tab-pane"
+                      type="button" role="tab" aria-controls="roma-tab-pane" aria-selected="false">
+                      Roma
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" id="paris-tab" data-bs-toggle="tab" data-bs-target="#paris-tab-pane"
+                      type="button" role="tab" aria-controls="paris-tab-pane" aria-selected="false">
+                      Paris
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" id="londres-tab" data-bs-toggle="tab"
+                      data-bs-target="#londres-tab-pane" type="button" role="tab" aria-controls="londres-tab-pane"
+                      aria-selected="false">
+                      Londres
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="asia-tab" data-bs-toggle="tab" data-bs-target="#asia-tab-pane"
+                  type="button" role="tab" aria-controls="asia-tab-pane" aria-selected="false">
+                  Asia
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="america-tab" data-bs-toggle="tab" data-bs-target="#america-tab-pane"
+                  type="button" role="tab" aria-controls="america-tab-pane" aria-selected="false">
+                  América
+                </button>
+              </li>
+              <li>
+                <button class="dark-light">🌙</button>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
       </div>
     </nav>
@@ -137,35 +145,83 @@
 
       <!-- Cards -->
       <div class="tab-pane fade" id="cards-tab-pane" role="tabpanel" aria-labelledby="cards-tab" tabindex="0">
-        <h1>Cards</h1>
-        <p>Europa content</p>
-      </div>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="images/londres.jpg" alt="Londres">
+            <div class="card-block">
+              <h4 class="card-title">Londres</h4>
+              <p class="card-text">Explora la vibrante capital del Reino Unido con sus icónicos monumentos como el Big
+                Ben, el London Eye y sus encantadores barrios históricos.</p>
+              <p class="card-text"><small>Precio: $500</small></p>
+            </div>
+          </div>
 
-      <!-- Asia -->
-      <div class="tab-pane fade" id="asia-tab-pane" role="tabpanel" aria-labelledby="asia-tab" tabindex="0">
-        <h1>Asia</h1>
-      </div>
+          <div class="card">
+            <img class="card-img-top" src="images/paris.jpg" alt="Paris">
+            <div class="card-block">
+              <h4 class="card-title">Paris</h4>
+              <p class="card-text">Descubre la ciudad del amor y sus monumentos emblemáticos como la Torre Eiffel, la
+                Arc de Triomphe y el Louvre.</p>
+              <p class="card-text"><small>Precio: $600</small></p>
+            </div>
+          </div>
 
-      <!-- America -->
-      <div class="tab-pane fade" id="america-tab-pane" role="tabpanel" aria-labelledby="america-tab" tabindex="0">
-        <h1>America</h1>
-      </div>
+          <div class="card">
+            <img class="card-img-top" src="images/roma.jpg" alt="Roma">
+            <div class="card-block">
+              <h4 class="card-title">Roma</h4>
+              <p class="card-text">Viaja a la antigua capital del Imperio Romano y disfruta de su historia, como el
+                Colosseo, el Pantheon y el Vaticano.</p>
+              <p class="card-text"><small>Precio: $700</small></p>
+            </div>
+          </div>
 
-      <!-- Roma -->
-      <div class="tab-pane fade" id="roma-tab-pane" role="tabpanel" aria-labelledby="roma-tab" tabindex="0">
-        <h1>Roma</h1>
-      </div>
+          <div class="card">
+            <img class="card-img-top" src="images/america.jpg" alt="America">
+            <div class="card-block">
+              <h4 class="card-title">America</h4>
+              <p class="card-text">Descubre la riqueza de América, con sus grandes ciudades, maravillas naturales,
+                culturas diversas y experiencias únicas en cada país.</p>
+              <p class="card-text"><small>Precio: $1200</small></p>
+            </div>
+          </div>
 
-      <!-- paris -->
-      <div class="tab-pane fade" id="paris-tab-pane" role="tabpanel" aria-labelledby="paris-tab" tabindex="0">
-        <h1>Paris</h1>
-      </div>
+          <div class="card">
+            <img class="card-img-top" src="images/asia.jpg" alt="Asia">
+            <div class="card-block">
+              <h4 class="card-title">Asia</h4>
+              <p class="card-text">Explora la riqueza de Asia, con sus ciudades majestuosas, paisajes impresionantes y
+                cultura diversa.</p>
+              <p class="card-text"><small>Precio: $1500</small></p>
+            </div>
+          </div>
+        </div>
 
-      <!--Londres -->
-      <div class="tab-pane fade" id="londres-tab-pane" role="tabpanel" aria-labelledby="londres-tab" tabindex="0">
-        <h1>Londres</h1>
+        <!-- Asia -->
+        <div class="tab-pane fade" id="asia-tab-pane" role="tabpanel" aria-labelledby="asia-tab" tabindex="0">
+          <h1>Asia</h1>
+        </div>
+
+        <!-- America -->
+        <div class="tab-pane fade" id="america-tab-pane" role="tabpanel" aria-labelledby="america-tab" tabindex="0">
+          <h1>America</h1>
+        </div>
+
+        <!-- Roma -->
+        <div class="tab-pane fade" id="roma-tab-pane" role="tabpanel" aria-labelledby="roma-tab" tabindex="0">
+          <h1>Roma</h1>
+        </div>
+
+        <!-- paris -->
+        <div class="tab-pane fade" id="paris-tab-pane" role="tabpanel" aria-labelledby="paris-tab" tabindex="0">
+          <h1>Paris</h1>
+        </div>
+
+        <!--Londres -->
+        <div class="tab-pane fade" id="londres-tab-pane" role="tabpanel" aria-labelledby="londres-tab" tabindex="0">
+          <h1>Londres</h1>
+        </div>
       </div>
-    </div>
   </main>
   <footer class="bg-light text-center py-4 fixed-bottom">
     <p class="mb-0">&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
