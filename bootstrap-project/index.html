@@ -1,15 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="src/main.js" defer></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+  <script src="src/main.js" defer></script>
+  <title>Travels</title>
 </head>
+
 <body>
-    <h1 class="btn btn-primary">Btn de bootstrap??</h1>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Travels</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="myTab" role="tablist"> <!-- no necesario usar nav-tap -->
+
+            <!-- Carousel -->
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+            </li>
+
+            <!-- Cards -->
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="cards-tap" data-bs-toggle="tab" data-bs-target="#cards-tab-pane" type="button"
+                role="tab" aria-controls="cards-tap-pane" aria-selected="false">Cards</button>
+            </li>
+
+            <!-- Destinos -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="europaDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Europa
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="europaDropdown">
+                <li>
+                  <button class="dropdown-item" id="roma-tab" data-bs-toggle="tab" data-bs-target="#roma-tab-pane"
+                    type="button" role="tab" aria-controls="roma-tab-pane" aria-selected="false">
+                    Roma
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" id="paris-tab" data-bs-toggle="tab" data-bs-target="#paris-tab-pane"
+                    type="button" role="tab" aria-controls="paris-tab-pane" aria-selected="false">
+                    Paris
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" id="londres-tab" data-bs-toggle="tab" data-bs-target="#londres-tab-pane"
+                    type="button" role="tab" aria-controls="londres-tab-pane" aria-selected="false">
+                    Londres
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="asia-tab" data-bs-toggle="tab" data-bs-target="#asia-tab-pane" type="button"
+                role="tab" aria-controls="asia-tab-pane" aria-selected="false">
+                Asia
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="america-tab" data-bs-toggle="tab" data-bs-target="#america-tab-pane"
+                type="button" role="tab" aria-controls="america-tab-pane" aria-selected="false">
+                América
+              </button>
+            </li>
+            <li>
+              <button class="dark-light">🌙</button>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+        <!-- Carousel Inicio-->
+        <div id="carouselDestinos" class="carousel slide" data-bs-ride="carousel" style="height:70vh;">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+              <img src="images/londres.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Londres">
+              <div class="carousel-caption d-none d-md-block text-bg-dark bg-opacity-50 p-3 rounded">
+                <h5>Londres</h5>
+                <p>Explora la vibrante capital británica con sus icónicos lugares.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img src="images/paris.jpg" class="d-block w-100 h-100 object-fit-cover" alt="París">
+              <div class="carousel-caption d-none d-md-block text-bg-dark bg-opacity-50 p-3 rounded">
+                <h5>París</h5>
+                <p>Descubre la ciudad del amor y sus monumentos emblemáticos.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img src="images/roma.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Roma">
+              <div class="carousel-caption d-none d-md-block text-bg-dark bg-opacity-50 p-3 rounded">
+                <h5>Roma</h5>
+                <p>Viaja a la antigua capital del Imperio Romano y disfruta de su historia.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestinos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDestinos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="tab-pane fade" id="cards-tab-pane" role="tabpanel" aria-labelledby="cards-tab" tabindex="0">
+        <h1>Cards</h1>
+        <p>Europa content</p>
+      </div>
+
+      <!-- Asia -->
+      <div class="tab-pane fade" id="asia-tab-pane" role="tabpanel" aria-labelledby="asia-tab" tabindex="0">
+        <h1>Asia</h1>
+      </div>
+
+      <!-- America -->
+      <div class="tab-pane fade" id="america-tab-pane" role="tabpanel" aria-labelledby="america-tab" tabindex="0">
+        <h1>America</h1>
+      </div>
+
+      <!-- Roma -->
+      <div class="tab-pane fade" id="roma-tab-pane" role="tabpanel" aria-labelledby="roma-tab" tabindex="0">
+        <h1>Roma</h1>
+      </div>
+
+      <!-- paris -->
+      <div class="tab-pane fade" id="paris-tab-pane" role="tabpanel" aria-labelledby="paris-tab" tabindex="0">
+        <h1>Paris</h1>
+      </div>
+
+      <!--Londres -->
+      <div class="tab-pane fade" id="londres-tab-pane" role="tabpanel" aria-labelledby="londres-tab" tabindex="0">
+        <h1>Londres</h1>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-light text-center py-4 fixed-bottom">
+    <p class="mb-0">&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    <p>
+      <a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a>
+    </p>
+  </footer>
 </body>
+
 </html>
