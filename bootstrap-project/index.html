@@ -82,10 +82,50 @@
                   América
                 </button>
               </li>
+
+              <!-- Varios -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="variosDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Varios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="variosDropdown">
+                  <li>
+                    <button class="dropdown-item" id="alert-tab" data-bs-toggle="tab" data-bs-target="#alert-tab-pane"
+                      type="button" role="tab" aria-controls="alert-tab-pane" aria-selected="false">
+                      Alert
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" id="accordion-tab" data-bs-toggle="tab"
+                      data-bs-target="#accordion-tab-pane" type="button" role="tab" aria-controls="accordion-tab-pane"
+                      aria-selected="false">
+                      Accordion
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" id="modales-tab" data-bs-toggle="tab"
+                      data-bs-target="#modales-tab-pane" type="button" role="tab" aria-controls="modales-tab-pane"
+                      aria-selected="false">
+                      Modales
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" id="disabled-tab" data-bs-toggle="tab"
+                      data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane"
+                      aria-selected="false" disabled>
+                      Disabled
+                    </button>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Boton de control de tema  -->
               <li>
                 <button class="dark-light">🌙</button>
               </li>
             </ul>
+
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
@@ -145,59 +185,79 @@
 
       <!-- Cards -->
       <div class="tab-pane fade" id="cards-tab-pane" role="tabpanel" aria-labelledby="cards-tab" tabindex="0">
-        <div class="container py4">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="cols">
-              <div class="card h-100">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card">
                 <img class="card-img-top" src="images/londres.jpg" alt="Londres">
                 <div class="card-body">
                   <h4 class="card-title">Londres</h4>
                   <p class="card-text">Explora la vibrante capital del Reino Unido con sus icónicos monumentos como el
                     Big
                     Ben, el London Eye y sus encantadores barrios históricos.</p>
-                  <p class="card-text"><small>Precio: $500</small></p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Precio: $500</small>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img class="card-img-top" src="images/paris.jpg" alt="Paris">
-            <div class="card-body">
-              <h4 class="card-title">Paris</h4>
-              <p class="card-text">Descubre la ciudad del amor y sus monumentos emblemáticos como la Torre Eiffel, la
-                Arc de Triomphe y el Louvre.</p>
-              <p class="card-text"><small>Precio: $600</small></p>
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card">
+                <img class="card-img-top" src="images/paris.jpg" alt="París">
+                <div class="card-body">
+                  <h4 class="card-title">París</h4>
+                  <p class="card-text">Descubre la ciudad del amor y sus monumentos emblemáticos como el Eiffel Tower y
+                    el
+                    Louvre.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Precio: $700</small>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img class="card-img-top" src="images/roma.jpg" alt="Roma">
-            <div class="card-body">
-              <h4 class="card-title">Roma</h4>
-              <p class="card-text">Viaja a la antigua capital del Imperio Romano y disfruta de su historia, como el
-                Colosseo, el Pantheon y el Vaticano.</p>
-              <p class="card-text"><small>Precio: $700</small></p>
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card">
+                <img class="card-img-top" src="images/roma.jpg" alt="Roma">
+                <div class="card-body">
+                  <h4 class="card-title">Roma</h4>
+                  <p class="card-text">Viaja a la antigua capital del Imperio Romano y disfruta de su historia, como el
+                    Colosseo, el Pantheon y el Vaticano.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Precio: $800</small>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img class="card-img-top" src="images/america.jpg" alt="America">
-            <div class="card-body">
-              <h4 class="card-title">America</h4>
-              <p class="card-text">Descubre la riqueza de América, con sus grandes ciudades, maravillas naturales,
-                culturas diversas y experiencias únicas en cada país.</p>
-              <p class="card-text"><small>Precio: $1200</small></p>
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card">
+                <img class="card-img-top" src="images/america.jpg" alt="America">
+                <div class="card-body">
+                  <h4 class="card-title">America</h4>
+                  <p class="card-text">Descubre la riqueza de América, con sus grandes ciudades, maravillas naturales,
+                    culturas diversas y experiencias únicas en cada país.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Precio: $1200</small>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div class="card">
-            <img class="card-img-top" src="images/asia.jpg" alt="Asia">
-            <div class="card-body">
-              <h4 class="card-title">Asia</h4>
-              <p class="card-text">Explora la riqueza de Asia, con sus ciudades majestuosas, paisajes impresionantes y
-                cultura diversa.</p>
-              <p class="card-text"><small>Precio: $1500</small></p>
+            <div class="col-12 col-md-4 mb-4">
+              <div class="card">
+                <img class="card-img-top" src="images/asia.jpg" alt="Asia">
+                <div class="card-body">
+                  <h4 class="card-title">Asia</h4>
+                  <p class="card-text">Explora la riqueza de Asia, con sus ciudades majestuosas, paisajes impresionantes
+                    y
+                    cultura diversa.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Precio: $1500</small>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -337,6 +397,65 @@
 
           <p><strong>Precio:</strong> $500</p>
         </div>
+      </div>
+      <!-- Alert -->
+      <div class="tab-pane fade" id="alert-tab-pane" role="tabpanel" aria-labelledby="alert-tab" tabindex="0">
+        <h1>Alert</h1>
+        <div class="alert alert-warning" role="alert">
+          Esto es un ejemplo de alerta en Bootstrap
+        </div>
+      </div>
+
+      <!-- Accordion -->
+      <div class="tab-pane fade" id="accordion-tab-pane" role="tabpanel" aria-labelledby="accordion-tab" tabindex="0">
+        <h1>Accordion</h1>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#acc1">
+                Sección 1
+              </button>
+            </h2>
+            <div id="acc1" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                Contenido de la sección 1
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modales -->
+      <div class="tab-pane fade" id="modales-tab-pane" role="tabpanel" aria-labelledby="modales-tab" tabindex="0">
+        <h1>Modales</h1>
+
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Abrir modal
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal Bootstrap</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                Contenido del modal
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desabilitado -->
+      <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+        <h1>Disabled</h1>
+        <p>Este contenido no debería mostrarse porque el tab está deshabilitado.</p>
       </div>
     </div>
   </main>
