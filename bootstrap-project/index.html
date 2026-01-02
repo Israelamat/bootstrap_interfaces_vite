@@ -83,6 +83,13 @@
                 </button>
               </li>
 
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="scrollspy-tab" data-bs-toggle="tab" data-bs-target="#scrollspy-tab-pane"
+                  type="button" role="tab" aria-controls="scrollspy-tab-pane" aria-selected="false">
+                  Scrollspy
+                </button>
+              </li>
+
               <!-- Varios -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="variosDropdown" role="button" data-bs-toggle="dropdown"
@@ -262,6 +269,84 @@
           </div>
         </div>
       </div>
+
+      <!-- Scrollspy -->
+      <div class="tab-pane fade" id="scrollspy-tab-pane" role="tabpanel" aria-labelledby="scrollspy-tab" tabindex="0">
+        <div class="container pt-5">
+          <h1 class="mb-3">Scrollspy</h1>
+          <div class="container-fluid mt-4">
+            <div class="row">
+
+              <div class="col-md-3">
+                <nav id="menuViajes" class="nav flex-column nav-pills">
+                  <a class="nav-link" href="#europa">Europa</a>
+
+                  <nav class="nav flex-column ms-3">
+                    <a class="nav-link" href="#roma">Roma</a>
+                    <a class="nav-link" href="#paris">París</a>
+                    <a class="nav-link" href="#londres">Londres</a>
+                  </nav>
+
+                  <a class="nav-link" href="#asia">Asia</a>
+                  <a class="nav-link" href="#america">América</a>
+                </nav>
+              </div>
+
+              <div class="col-md-9">
+                <div data-bs-spy="scroll" data-bs-target="#menuViajes" data-bs-offset="0" class="border p-3"
+                  style="height: 400px; overflow-y: auto; position: relative;" tabindex="0">
+
+                  <h4 id="europa">Europa</h4>
+                  <img src="images/europa.jpg" alt="Europa" class="img-fluid w-25">
+                  <p>Europa es un destino ideal para quienes buscan una combinación única de historia, cultura y
+                    diversidad, con ciudades que han marcado el rumbo del mundo a lo largo de los siglos, una
+                    gastronomía variada y reconocida internacionalmente, paisajes que van desde playas mediterráneas
+                    hasta montañas alpinas y una excelente conexión entre países que permite descubrir varios destinos
+                    en un solo viaje.</p>
+                  <h5 id="roma">Roma</h5>
+                  <img src="images/roma.jpg" alt="Roma" class="img-fluid w-25">
+                  <p>Roma es una ciudad que te transporta al pasado en cada rincón, donde monumentos emblemáticos como
+                    el Coliseo, el Foro Romano y el Vaticano conviven con calles llenas de vida, plazas históricas, arte
+                    en cada esquina y una gastronomía italiana auténtica que convierte cada paseo en una experiencia
+                    cultural y sensorial inolvidable.</p>
+
+                  <h5 id="paris">París</h5>
+                  <img src="images/paris.jpg" alt="Paris" class="img-fluid w-25">
+                  <p>París es conocida como la ciudad del amor y la luz, un destino que enamora por su arquitectura
+                    elegante, sus museos de fama mundial como el Louvre, sus románticos paseos junto al Sena, su
+                    vibrante vida cultural y su exquisita cocina, convirtiéndola en una ciudad perfecta tanto para
+                    escapadas románticas como para viajes culturales.</p>
+
+                  <h5 id="londres">Londres</h5>
+                  <img src="images/londres.jpg" alt="Londres" class="img-fluid w-25">
+                  <p>Londres es una ciudad cosmopolita y dinámica donde la tradición y la modernidad se mezclan de forma
+                    natural, ofreciendo iconos históricos como el Big Ben y el Palacio de Buckingham junto a barrios
+                    modernos, mercados multiculturales, teatros de primer nivel y una diversidad cultural que la
+                    convierte en una de las capitales más fascinantes del mundo.</p>
+
+                  <h4 id="asia">Asia</h4>
+                  <img src="images/asia.jpg" alt="Asia" class="img-fluid w-25">
+                  <p></p>Asia es un continente lleno de contrastes que ofrece experiencias únicas, desde antiguas
+                  tradiciones milenarias y templos históricos hasta megaciudades futuristas, paisajes naturales
+                  impresionantes y una riqueza cultural y gastronómica inigualable que permite al viajero descubrir
+                  mundos completamente diferentes en cada país.
+
+                  <h4 id="america">América</h4>
+                  <img src="images/america.jpg" alt="America" class="img-fluid w-25">
+                  <p>América destaca por su enorme diversidad geográfica y cultural, con destinos que van desde grandes
+                    metrópolis modernas hasta maravillas naturales impresionantes, playas paradisíacas, selvas, montañas
+                    y culturas vibrantes que ofrecen experiencias únicas y aventuras inolvidables para todo tipo de
+                    viajeros.</p>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Asia -->
       <div class="tab-pane fade" id="asia-tab-pane" role="tabpanel" aria-labelledby="asia-tab" tabindex="0">
         <div class="container py-5">
@@ -301,6 +386,22 @@
             maravillas naturales y una enorme diversidad cultural. Desde el norte hasta el sur,
             cada país ofrece una experiencia diferente e inolvidable.
           </p>
+          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+            data-bs-placement="top" data-bs-content="Top popover">
+            Popover on top
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+            data-bs-placement="right" data-bs-content="Right popover">
+            Popover on right
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+            data-bs-placement="bottom" data-bs-content="Bottom popover">
+            Popover on bottom
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+            data-bs-placement="left" data-bs-content="Left popover">
+            Popover on left
+          </button>
 
           <p>
             Podrás explorar ciudades modernas, playas paradisíacas, selvas, montañas y conocer
@@ -315,6 +416,7 @@
           </ul>
 
           <p><strong>Precio:</strong> $1200</p>
+
         </div>
       </div>
 
@@ -401,25 +503,125 @@
       <!-- Alert -->
       <div class="tab-pane fade" id="alert-tab-pane" role="tabpanel" aria-labelledby="alert-tab" tabindex="0">
         <h1>Alert</h1>
-        <div class="alert alert-warning" role="alert">
-          Esto es un ejemplo de alerta en Bootstrap
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          ¡Todo ha salido bien! Esto es una alerta verde.
+          <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+        <button class="btn btn-primary">Show live alert</button>
+
       </div>
 
       <!-- Accordion -->
       <div class="tab-pane fade" id="accordion-tab-pane" role="tabpanel" aria-labelledby="accordion-tab" tabindex="0">
         <h1>Accordion</h1>
 
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#acc1">
-                Sección 1
-              </button>
-            </h2>
-            <div id="acc1" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                Contenido de la sección 1
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div class="accordion" id="accordionCard">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="false" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionCard">
+                  <div class="accordion-body">
+                    <!-- card -->
+                    <div class="card">
+                      <img class="card-img-top" src="images/america.jpg" alt="America">
+                      <div class="card-body">
+                        <h4 class="card-title">America</h4>
+                        <p class="card-text">
+                          Descubre la riqueza de América, con sus grandes ciudades, maravillas naturales,
+                          culturas diversas y experiencias únicas en cada país.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Precio: $1200</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionCardFooterHeader">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionCardFooterHeader">
+                  <div class="accordion-body">
+                    <!-- card -->
+                    <div class="card">
+                      <div class="card-header text-center">Vaieje Recomendado pro nuestros Usuarios</div>
+                      <div class="card-body text-center">America</div>
+                      <div class="row justify-content-center">
+                        <button class="btn btn-primary text-center w-25">Ver más</button>
+                      </div>
+                      <div class="card-footer text-center">Precio: $1200</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionModals">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionModals">
+                  <div class="accordion-body">
+                    <!-- Modals -->
+                    <div class="card mb-3 text-center">
+                      <div class="card-header">Viaje Recomendado</div>
+                      <div class="card-body">
+                        <h5 class="card-title">América</h5>
+                        <p class="card-text">Explora los paisajes y ciudades más emblemáticas de América.</p>
+                        <!-- Botón para abrir el modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                          data-bs-target="#miModalPersonalizado">
+                          Ver más
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="miModalPersonalizado" tabindex="-1" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <h5 class="modal-title">América</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+
+                          <div class="modal-body">
+                            <p>Conoce más sobre América: cultura, naturaleza y experiencias únicas en cada país.</p>
+                          </div>
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back</button>
+                            <button type="button" class="btn btn-primary">Ir a la reserva</button>
+                          </div>
+
+
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
