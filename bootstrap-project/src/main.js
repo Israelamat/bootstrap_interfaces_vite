@@ -7,6 +7,3 @@ function lightDark(){
   html.setAttribute("data-bs-theme", esOscuro ? "light" : "dark");
   theme.textContent = esOscuro ? "🌙" : "☀️";
 }
-
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
