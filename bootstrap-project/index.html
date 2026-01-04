@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -156,12 +156,13 @@
       <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
 
         <!-- Carousel Inicio-->
-        <div id="carouselDestinos" class="carousel slide" data-bs-ride="carousel" style="height:70vh;">
+        <div id="carouselDestinos" class="carousel slide vh-75" data-bs-interval="3000" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
 
           <div class="carousel-inner h-100">
@@ -184,6 +185,14 @@
               <div class="carousel-caption d-none d-md-block text-bg-dark bg-opacity-50 p-3 rounded">
                 <h5>Roma</h5>
                 <p>Viaja a la antigua capital del Imperio Romano y disfruta de su historia.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img src="images/america.jpg" class="d-block w-100 h-100 object-fit-cover" alt="America">
+              <div class="carousel-caption d-none d-md-block text-bg-dark bg-opacity-50 p-3 rounded">
+                <h5>America</h5>
+                <p>Viaja a la riqueza de America con sus grandes ciudades, maravillas naturales y experiencias unicas
+                </p>
               </div>
             </div>
           </div>
@@ -305,42 +314,109 @@
                 <div data-bs-spy="scroll" data-bs-target="#menuViajes" data-bs-offset="0" class="border p-3"
                   style="height: 400px; overflow-y: auto; position: relative;" tabindex="0">
 
-                  <h4 id="europa">Europa</h4>
+                  <h4 id="europa">
+                    Europa
+                    <button type="button" class="btn btn-sm btn-outline-primary ms-2" data-bs-toggle="popover"
+                      data-bs-trigger="focus" data-bs-placement="right" title="Dato sobre Europa"
+                      data-bs-content="Europa destaca por su gran riqueza histórica y cultural, con numerosos países muy bien conectados entre sí.">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                      </svg>
+                    </button>
+                  </h4>
                   <img src="images/europa.jpg" alt="Europa" class="img-fluid w-25">
                   <p>Europa es un destino ideal para quienes buscan una combinación única de historia, cultura y
                     diversidad, con ciudades que han marcado el rumbo del mundo a lo largo de los siglos, una
                     gastronomía variada y reconocida internacionalmente, paisajes que van desde playas mediterráneas
                     hasta montañas alpinas y una excelente conexión entre países que permite descubrir varios destinos
                     en un solo viaje.</p>
-                  <h5 id="roma">Roma</h5>
+
+                  <h5 id="roma">
+                    Roma
+                    <button type="button" class="btn btn-sm btn-outline-primary ms-2" data-bs-toggle="popover"
+                      data-bs-trigger="focus" data-bs-placement="right" title="Dato sobre Roma"
+                      data-bs-content="Roma es conocida como la Ciudad Eterna y fue el centro del Imperio Romano durante siglos.">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                        class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                      </svg>
+                    </button>
+                  </h5>
                   <img src="images/roma.jpg" alt="Roma" class="img-fluid w-25">
                   <p>Roma es una ciudad que te transporta al pasado en cada rincón, donde monumentos emblemáticos como
                     el Coliseo, el Foro Romano y el Vaticano conviven con calles llenas de vida, plazas históricas, arte
                     en cada esquina y una gastronomía italiana auténtica que convierte cada paseo en una experiencia
                     cultural y sensorial inolvidable.</p>
 
-                  <h5 id="paris">París</h5>
+                  <h5 id="paris">
+                    París
+                    <button type="button" class="btn btn-sm btn-outline-primary ms-2" data-bs-toggle="popover"
+                      data-bs-trigger="focus" data-bs-placement="right" title="Dato sobre París"
+                      data-bs-content="París alberga algunos de los museos más importantes del mundo y es un referente cultural europeo.">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                        class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.920.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                      </svg>
+                    </button>
+                  </h5>
                   <img src="images/paris.jpg" alt="Paris" class="img-fluid w-25">
                   <p>París es conocida como la ciudad del amor y la luz, un destino que enamora por su arquitectura
                     elegante, sus museos de fama mundial como el Louvre, sus románticos paseos junto al Sena, su
                     vibrante vida cultural y su exquisita cocina, convirtiéndola en una ciudad perfecta tanto para
                     escapadas románticas como para viajes culturales.</p>
 
-                  <h5 id="londres">Londres</h5>
+                  <h5 id="londres">
+                    Londres
+                    <button type="button" class="btn btn-sm btn-outline-primary ms-2" data-bs-toggle="popover"
+                      data-bs-trigger="focus" data-bs-placement="right" title="Dato sobre Londres"
+                      data-bs-content="Londres es una de las ciudades más multiculturales del mundo y un importante centro financiero.">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                        class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.920.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                      </svg>
+                    </button>
+                  </h5>
                   <img src="images/londres.jpg" alt="Londres" class="img-fluid w-25">
                   <p>Londres es una ciudad cosmopolita y dinámica donde la tradición y la modernidad se mezclan de forma
                     natural, ofreciendo iconos históricos como el Big Ben y el Palacio de Buckingham junto a barrios
                     modernos, mercados multiculturales, teatros de primer nivel y una diversidad cultural que la
                     convierte en una de las capitales más fascinantes del mundo.</p>
 
-                  <h4 id="asia">Asia</h4>
+                  <h4 id="asia">
+                    Asia
+                    <button type="button" class="btn btn-sm btn-outline-primary ms-2" data-bs-toggle="popover"
+                      data-bs-trigger="focus" data-bs-placement="right" title="Dato sobre Asia"
+                      data-bs-content="Asia es el continente más grande y poblado del mundo, con una enorme diversidad cultural, religiosa y natural.">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                      </svg>
+                    </button>
+                  </h4>
                   <img src="images/asia.jpg" alt="Asia" class="img-fluid w-25">
                   <p></p>Asia es un continente lleno de contrastes que ofrece experiencias únicas, desde antiguas
                   tradiciones milenarias y templos históricos hasta megaciudades futuristas, paisajes naturales
                   impresionantes y una riqueza cultural y gastronómica inigualable que permite al viajero descubrir
                   mundos completamente diferentes en cada país.
 
-                  <h4 id="america">América</h4>
+                  <h4 id="america">
+                    América
+                    <button type="button" class="btn btn-sm btn-outline-primary ms-2" data-bs-toggle="popover"
+                      data-bs-trigger="focus" data-bs-placement="right" title="Dato sobre América"
+                      data-bs-content="América es el segundo continente más grande del mundo y alberga una enorme diversidad cultural, climática y natural.">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                      </svg>
+                    </button>
+                  </h4>
                   <img src="images/america.jpg" alt="America" class="img-fluid w-25">
                   <p>América destaca por su enorme diversidad geográfica y cultural, con destinos que van desde grandes
                     metrópolis modernas hasta maravillas naturales impresionantes, playas paradisíacas, selvas, montañas
@@ -395,23 +471,6 @@
             maravillas naturales y una enorme diversidad cultural. Desde el norte hasta el sur,
             cada país ofrece una experiencia diferente e inolvidable.
           </p>
-          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-            data-bs-placement="top" data-bs-content="Top popover">
-            Popover on top
-          </button>
-          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-            data-bs-placement="right" data-bs-content="Right popover">
-            Popover on right
-          </button>
-          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-            data-bs-placement="bottom" data-bs-content="Bottom popover">
-            Popover on bottom
-          </button>
-          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-            data-bs-placement="left" data-bs-content="Left popover">
-            Popover on left
-          </button>
-
           <p>
             Podrás explorar ciudades modernas, playas paradisíacas, selvas, montañas y conocer
             culturas vibrantes que hacen de América un destino ideal para los amantes de la
@@ -640,13 +699,13 @@
                               <p class="card-text">Explora los paisajes y ciudades más emblemáticas de América.</p>
                               <!-- Botón para abrir el modal -->
                               <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#miModalPersonalizado">
+                                data-bs-target="#miModalPersonalizado2">
                                 Ver más
                               </button>
                             </div>
                           </div>
                         </div>
-                        <div class="modal fade" id="miModalPersonalizado" tabindex="-1" aria-hidden="true">
+                        <div class="modal fade" id="miModalPersonalizado2" tabindex="-1" aria-hidden="true">
                           <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
 
@@ -713,97 +772,93 @@
       <div class="tab-pane fade" id="sobreNostros-tab-pane" role="tabpanel" aria-labelledby="sobreNostros-tab"
         tabindex="0">
         <h1>Sobre Nosotros</h1>
-        <div class="app">
-          <form action="#" method="POST">
-            <div class="row g-3 mb-3">
-              <div class="col-md-6">
-                <div class="input-group">
-                  <span class="input-group-text bg-light text-muted">
-                    N
-                  </span>
-                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="input-group">
-                  <span class="input-group-text bg-light text-muted">
-                    A
-                  </span>
-                  <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido"
-                    required>
-                </div>
-              </div>
-            </div>
-
-            <div class="mb-3">
+        <form action="#" method="POST">
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
               <div class="input-group">
                 <span class="input-group-text bg-light text-muted">
-                  @
+                  N
                 </span>
-                <input type="email" class="form-control" id="email" placeholder="Correo electrónico"
-                  aria-label="Correo electrónico" required>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
               </div>
             </div>
-
-            <div class="row g-3 mb-3">
-              <div class="col-md-6">
-                <div class="input-group">
-                  <span class="input-group-text bg-light text-muted">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-telephone" viewBox="0 0 16 16">
-                      <path
-                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                    </svg>
-                  </span>
-                  <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" aria-label="Teléfono"
-                    required>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="input-group">
-                  <span class="input-group-text bg-light text-muted">
-                    D
-                  </span>
-                  <div class="form-floating flex-grow-1">
-                    <select class="form-select" id="departamento" aria-label="Departamento" required
-                      style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
-                      <option selected disabled value="">Elige una opción...</option>
-                      <option value="1">Ventas</option>
-                      <option value="2">Soporte</option>
-                      <option value="3">Administración</option>
-                    </select>
-                    <label for="departamento" class="small text-muted">Departamento</label>
-                  </div>
-                </div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <span class="input-group-text bg-light text-muted">
+                  A
+                </span>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido" aria-label="Apellido"
+                  required>
               </div>
             </div>
+          </div>
 
-            <div class="mb-4">
+          <div class="mb-3">
+            <div class="input-group">
+              <span class="input-group-text bg-light text-muted">
+                @
+              </span>
+              <input type="email" class="form-control" id="email" placeholder="Correo electrónico"
+                aria-label="Correo electrónico" required>
+            </div>
+          </div>
+
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
               <div class="input-group">
                 <span class="input-group-text bg-light text-muted">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-card-text" viewBox="0 0 16 16">
+                    class="bi bi-telephone" viewBox="0 0 16 16">
                     <path
-                      d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z" />
-                    <path
-                      d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
+                      d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                   </svg>
                 </span>
-                <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje detallado"
-                  aria-label="Mensaje" required></textarea>
+                <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" aria-label="Teléfono"
+                  required>
               </div>
             </div>
+            <div class="col-md-6">
+              <div class="input-group">
+                <span class="input-group-text bg-light text-muted">
+                  D
+                </span>
+                <div class="form-floating flex-grow-1">
+                  <select class="form-select rounded-start-0" id="departamento" aria-label="Departamento" required>
+                    <option selected disabled value="">Elige una opción...</option>
+                    <option value="1">Ventas</option>
+                    <option value="2">Soporte</option>
+                    <option value="3">Administración</option>
+                  </select>
+                  <label for="departamento" class="small text-muted">Departamento</label>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <button type="submit" class="btn btn-primary w-100 py-2 fw-bold" style="background-color: #0d6efd;">
-              Enviar Formulario
-            </button>
-          </form>
-        </div>
+          <div class="mb-4">
+            <div class="input-group">
+              <span class="input-group-text bg-light text-muted">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-card-text" viewBox="0 0 16 16">
+                  <path
+                    d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z" />
+                  <path
+                    d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
+                </svg>
+              </span>
+              <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje detallado"
+                aria-label="Mensaje" required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">
+            Enviar Formulario
+          </button>
+        </form>
       </div>
-
     </div>
   </main>
-  <footer class="bg-light text-center py-4 fixed-bottom">
+  <footer class="bg-body-tertiary text-center py-4 fixed-bottom ">
     <p class="mb-0">&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
     <p>
       <a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a>
